@@ -1,15 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300,400,900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*quizas
+img{
+    width: 100%;
+}
+quizas*/
+body {
+  font-family: "Merriweather", serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+}
+nav h3 {
+  font-weight: 900;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+nav li {
+  display: inline-block;
+  padding-right: 0.5rem;
+}
+nav li:last-child {
+  padding-right: 0;
+}
+nav a {
+  text-decoration: none;
+  font-size: 0.85rem;
+  color: gray;
+}
+nav a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
 .contenedor {
   margin-left: auto;
   margin-right: auto;
   margin-left: 15px;
   margin-right: 15px;
-  background-color: lightskyblue;
 }
 
 /* Row */
 .row {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
 }
 
 /*COLUMNAS smartphone*/
@@ -64,7 +115,19 @@
 @media (min-width: 576px) {
   .contenedor {
     width: 540px;
-    background-color: orange;
+  }
+
+  .noticia {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .d-sm-none {
+    display: none;
+  }
+
+  .d-sm-block {
+    display: block;
   }
 
   .col-sm-12 {
@@ -118,7 +181,19 @@
 @media (min-width: 768px) {
   .contenedor {
     width: 750px;
-    background-color: maroon;
+  }
+
+  .noticia {
+    width: 30%;
+    max-width: 300px;
+  }
+
+  .d-md-none {
+    display: none;
+  }
+
+  .d-md-block {
+    display: block;
   }
 
   .col-md-12 {
@@ -172,7 +247,14 @@
 @media (min-width: 992px) {
   .contenedor {
     width: 970px;
-    background-color: #1201f8;
+  }
+
+  .d-lg-none {
+    display: none;
+  }
+
+  .d-lg-block {
+    display: block;
   }
 
   .col-lg-12 {
@@ -226,7 +308,14 @@
 @media (min-width: 1200px) {
   .contenedor {
     width: 1170px;
-    background-color: #2bff00;
+  }
+
+  .d-xl-none {
+    display: none;
+  }
+
+  .d-xl-block {
+    display: block;
   }
 
   .col-xl-12 {
@@ -276,6 +365,27 @@
   .col-xl-1 {
     grid-column: span 1;
   }
+}
+main {
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.noticia .cabecera {
+  widht: 100%;
+}
+.noticia .cuerpo {
+  width: 100%;
+}
+.noticia__img {
+  background-image: url("https://picsum.photos/200/300?random=1");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
 }
 
 /*# sourceMappingURL=style.css.map */
