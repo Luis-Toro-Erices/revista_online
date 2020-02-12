@@ -19,6 +19,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0 3rem;
+  border-bottom: 1px solid #424242;
 }
 nav h3 {
   font-weight: 900;
@@ -40,6 +41,10 @@ nav a {
 nav a:hover {
   color: black;
   text-decoration: underline;
+}
+
+.nav__menu {
+  display: inline-block;
 }
 
 .contenedor {
@@ -113,10 +118,6 @@ nav a:hover {
 }
 
 @media (min-width: 576px) {
-  .contenedor {
-    width: 540px;
-  }
-
   .noticia {
     width: 100%;
     max-width: 300px;
@@ -179,10 +180,6 @@ nav a:hover {
   }
 }
 @media (min-width: 768px) {
-  .contenedor {
-    width: 750px;
-  }
-
   .noticia {
     width: 30%;
     max-width: 300px;
@@ -245,10 +242,6 @@ nav a:hover {
   }
 }
 @media (min-width: 992px) {
-  .contenedor {
-    width: 970px;
-  }
-
   .d-lg-none {
     display: none;
   }
@@ -306,10 +299,6 @@ nav a:hover {
   }
 }
 @media (min-width: 1200px) {
-  .contenedor {
-    width: 1170px;
-  }
-
   .d-xl-none {
     display: none;
   }
@@ -366,6 +355,105 @@ nav a:hover {
     grid-column: span 1;
   }
 }
+.derechos {
+  background-color: #ffffff;
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+aside {
+  background-color: #ffffff;
+  padding-left: 80px;
+  padding-right: 80px;
+  margin-bottom: 50px;
+}
+
+.nosotros {
+  border-bottom: 1px solid #000000;
+}
+
+.tags {
+  border-bottom: 1px solid #000000;
+}
+
+.botonera {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: -20px;
+}
+.botonera .kepaza {
+  background-color: #00a2ff;
+  border-style: hidden;
+  color: white;
+}
+
+.destacados__img {
+  background-image: url("https://picsum.photos/200/300?random=2");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 220px;
+}
+
+.destacados__img2 {
+  background-image: url("https://picsum.photos/200/300?random=3");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 220px;
+}
+
+.destacados__img3 {
+  background-image: url("https://picsum.photos/200/300?random=4");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 220px;
+}
+
+section {
+  display: flex;
+  width: 100%;
+  height: 180px;
+  background-color: #dddada;
+  text-align: center;
+  justify-content: center;
+}
+
+.bajada {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.titulo__bajada {
+  font-size: 25px;
+}
+
+.contenido__bajada {
+  margin-top: -25px;
+}
+
+.sus__2 {
+  background-color: orange;
+  border-style: hidden;
+  color: white;
+  width: 20%;
+  height: 20px;
+}
+
+.sus__1 {
+  background-color: white;
+  border-style: hidden;
+  color: white;
+  width: 40%;
+  height: 20px;
+}
+
 main {
   background-color: #ffffff;
   display: flex;
@@ -380,12 +468,52 @@ main {
   width: 100%;
 }
 .noticia__img {
-  background-image: url("https://picsum.photos/200/300?random=1");
+  background-image: url("https://picsum.photos/200/300?random");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 300px;
+  height: 400px;
+}
+.noticia__img2 {
+  background-image: url("https://picsum.photos/200/300?random=2");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+}
+.noticia__img3 {
+  background-image: url("https://picsum.photos/200/300?random=3");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+}
+.noticia__img4 {
+  background-image: url("https://picsum.photos/200/300?random=4");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+}
+.noticia__img5 {
+  background-image: url("https://picsum.photos/200/300?random=5");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+}
+.noticia__img6 {
+  background-image: url("https://picsum.photos/200/300?random=6");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
 }
 
 /*# sourceMappingURL=style.css.map */
